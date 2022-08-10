@@ -73,7 +73,7 @@ function renderPoll(question, optionA, optionB, optionAVotes, optionBVotes) {
     votesAEl.textContent = optionAVotes;
     votesBEl.textContent = optionBVotes;
 
-    currentPollEl.append(questionEl, userOptionA, userOptionB, optionAVotes, optionB);
+    currentPollEl.append(questionEl, userOptionA, userOptionB, votesAEl, votesBEl);
     return currentPollEl;
 
 }
@@ -105,3 +105,4 @@ function displayPastPolls() {
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+//pull request
