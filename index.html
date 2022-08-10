@@ -12,16 +12,62 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
+    <title>Lex's Poll</title>
 </head>
 
 <body>
     <header>
         <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Lex's poll</h1>
     </header>
 
     <main>
+        <h2>Current Poll</h2>
+    <section id="current-poll-container"></section>
+    <br>
+        
+        
+        <h2>Edit Poll</h2>
+        <section>
+            <form id="new-poll">
+                <label>
+                    Question:
+                    <input required name="question">
+                </label>
+                <label>
+                    Option A:
+                    <input required name="option-A">
+                </label>
+                <label>
+                    Option B:
+                    <input required name="option-B">
+                </label>
+                <button id="start-poll-button">Start Poll</button>
+                </form>
+                <br>
+                
+        </section>
+        <br>
+        <section id="current-poll-results">
+
+        </section>
+
+        
+        <button id="option-a-add-button">add-A</button>
+        <button id="option-a-subtract-button">subtract-A</button>
+        <button id="option-b-add-button">add-B</button>
+        <button id="option-b-subtract-button">subtract-B</button>
+        
+        
+        <br><br>
+        <button id="finish-poll-button">finish poll</button>
+        
+
+    <section id="past-polls">
+        <h2>Past Polls</h2>
+        <div id="past-poll-container">
+        </div>
+    </section>
 
     </main>
 
